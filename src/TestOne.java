@@ -74,6 +74,10 @@ public class TestOne {
         String[] wordsArray = {"Tuwaiq", "Bootcamp", "Student", "JAVA"};
         String shortestWord = null;
         for (int i = 0; i <= wordsArray.length-1; i++) {
+            System.out.print(wordsArray[i]);
+            if (i !=wordsArray.length-1){
+                System.out.print(", ");
+            }
             if (i ==0){
                 shortestWord = wordsArray[i];
             }
@@ -82,6 +86,7 @@ public class TestOne {
             }
         }
 
+        System.out.println();
         System.out.println("The shortest word is:");
         System.out.println(shortestWord);
     }
